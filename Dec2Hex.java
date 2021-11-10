@@ -9,7 +9,7 @@ class Dec2Hex
 	// return an error if no input argument is provided 
         if(args.length == 0) 
 	{
-           logger.log("ERROR: Please Enter a Decimal Number to Convert");
+           System.out.println("ERROR: Please Enter a Decimal Number to Convert");
            return;
         }
 
@@ -22,11 +22,11 @@ class Dec2Hex
         }
         catch(NumberFormatException ex)
         {
-          logger.log("ERROR: Please Enter Valid Decimal Number: ");
+          System.out.println("ERROR: Please Enter Valid Decimal Number: ");
           return;
         }
 
-	logger.log("Conversion of Decimal to Hexadecimal");
+	System.out.println("Conversion of Decimal to Hexadecimal");
 	int num, rem;
 	num = Arg1;
 	String hex = "";
@@ -39,7 +39,7 @@ class Dec2Hex
             num = num/16;
         }
 
-        logger.log("Hexadecimal representation is: " + hex);
+        System.out.println("Hexadecimal representation is: " + hex);
 
     }
 }
