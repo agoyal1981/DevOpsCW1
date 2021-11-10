@@ -1,5 +1,5 @@
+o
 import java.util.Scanner;
-import java.io.*;
 
 class Dec2Hex
 {
@@ -10,7 +10,7 @@ class Dec2Hex
 	// return an error if no input argument is provided 
         if(args.length == 0) 
 	{
-           System.out.println("Please Enter a Decimal Number to Convert");
+           logger.log("ERROR: Please Enter a Decimal Number to Convert");
            return;
         }
 
@@ -23,11 +23,11 @@ class Dec2Hex
         }
         catch(NumberFormatException ex)
         {
-          System.out.println("Please Enter Valid Decimal Number: ");
+          logger.log("ERROR: Please Enter Valid Decimal Number: ");
           return;
         }
 
-	System.out.println("Conversion of Decimal to Hexadecimal");
+	logger.log("Conversion of Decimal to Hexadecimal");
 	int num, rem;
 	num = Arg1;
 	String hex = "";
@@ -40,7 +40,7 @@ class Dec2Hex
             num = num/16;
         }
 
-        System.out.println("Hexadecimal representation is: " + hex);
+        logger.log("Hexadecimal representation is: " + hex);
 
     }
 }
