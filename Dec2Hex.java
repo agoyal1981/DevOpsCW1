@@ -29,7 +29,7 @@ class Dec2Hex
 
 	System.out.println("Conversion of Decimal to Hexadecimal");
 	int num, rem;
-	int num = Arg1;
+	num = Arg1;
 	String hex = "";
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 	
